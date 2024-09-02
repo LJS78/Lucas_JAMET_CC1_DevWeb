@@ -23,6 +23,7 @@ function launchGame(_evt) {
 }
 //Vérification de la saisie de l'utilisateur
 function verifyGuess() {
+    if (!$numUsr.value.trim()) return;
     const userInput = Number($numUsr.value);
     nbGuesses++;
   //Vérifier si la saisie est trop élevée, trop basse ou correcte
